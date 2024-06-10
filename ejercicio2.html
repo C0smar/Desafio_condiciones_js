@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div>
+        <a href="./index.html"><img class="volver" src="./assets/img/atras.png" alt="volver"> </a>
+    </div>
+    
+    <h1> Puedes llevar hasta 10 stickers</h1>
+
+    <div class="caja">
+    <div class="caja_sticker">
+        <img class="sticker" src="./assets/img/sticker_1.png" alt="imagen 1">
+        <input class="dato1" type="text">
+    </div>
+
+    <div class="caja_sticker">
+        <img class="sticker" src="./assets/img/sticker_2.png" alt="imagen 2">
+        <input class="dato2" type="text">
+    </div>
+
+    <div class="caja_sticker">
+        <img class="sticker" src="./assets/img/sticker_3.png" alt="imagen 3">
+        <input class="dato3" type="text">
+    </div>
+    </div>
+
+
+    <div>
+        <button onclick="
+            var sticker1 = Number(document.querySelector('.dato1').value);
+            var sticker2 = Number(document.querySelector('.dato2').value);
+            var sticker3 = Number(document.querySelector('.dato3').value);
+            var suma = sticker1 + sticker2 + sticker3;
+            var total = document.querySelector ('.contador')
+           
+            if (suma == 0){
+                total.innerHTML = 'No llevas ningún sticker'
+                }
+            else if (suma == 1) {
+                total.innerHTML = 'Llevas '+suma+' sticker';
+        
+                }
+            else if (suma <= 10) {
+                total.innerHTML = 'Llevas '+suma+' stickers';
+                
+                }
+            else if (suma > 10) {
+                total.innerHTML = 'Llevas demasiados stickers' ;
+                
+                }
+            
+            "> verificar</button>
+    </div>
+    <div> 
+        <p class="contador"> </p>
+    </div>
+    
+
+
+
+
+
+
+</body>
+</html>

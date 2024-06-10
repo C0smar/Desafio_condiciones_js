@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div>
+        <a href="./index.html"><img class="volver" src="./assets/img/atras.png" alt="volver"> </a>
+    </div>
+    
+    <section class="principal">
+    <h1> Ingrese Password</h1>
+
+    <div class="caja_selects">
+        <div>
+            <select name="valores1" id="valores1" onchange="
+ 
+                ">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+
+                </select>
+        </div>
+
+        <div>
+            <select name="valores2" id="valores2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+        <div>
+            <select name="valores3" id="valores3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <button onclick="
+            var valores1 = document.getElementById('valores1').value;
+            var valores2 = document.getElementById('valores2').value;
+            var valores3 = document.getElementById('valores3').value;
+            var password = valores1 + valores2 + valores3;
+            var resultado = document.querySelector('.resultado')
+
+            if (password === '911'){
+                resultado.innerHTML = 'password 1 correcto';
+                console.log('pasword 1 correcto')
+                
+            }
+            else if (password === '714'){
+                resultado.innerHTML = 'password 2 correcto';
+                console.log('pasword 2 correcto')
+            }
+            else { resultado.innerHTML = 'password incorrecto'
+            console.log('pasword 3 correcto')
+
+            }
+            
+            "> Ingresar</button>
+    </div>
+
+    <div>
+        <p class="resultado"></p>
+    </div>
+    </section>
+
+</body>
+</html>

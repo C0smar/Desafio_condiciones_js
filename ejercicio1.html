@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<body>
+    <div>
+        <a href="./index.html"><img class="volver" src="./assets/img/atras.png" alt="volver"> </a>
+    </div>
+
+    <div class="ejercicio1">
+    <img class="imagen" src="./assets/img/Coraje.webp" alt="coraje el perro cobarde" 
+        onclick="
+                var imgen = document.querySelector('.imagen')
+                if (imgen.classList.contains('borde')){ 
+                    imgen.classList.remove('borde'); 
+                }else { imgen.classList.add('borde'); }
+        "
+    
+    >
+    </div>  
+    <script>
+    </script>
+</body>
+</html>
